@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+
+let json = require('./data/above-10.json');
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flexContainer">
+        <h1 className="title">Meu Carrinho</h1>
+        {json.items.map(produto => (
+          <li className="products" key={produto.id}>
+            <div className="imgWrapper"><img src={produto.imageUrl} alt={produto.name} /></div>
+            <div className="productDescription">
+              <p>{produto.name}</p>
+            </div>
+          </li>
+        ))}
+      </div>
     </div>
   );
 }
