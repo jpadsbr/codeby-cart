@@ -19,22 +19,51 @@ body{
 }
 
 .title{
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   font: bold 30px Poppins, sans-serif;
 }
 
+hr{
+  size: 1px;
+  opacity: 0.5;
+  margin: 15px 0 10px 0;
+}
+
 .products{
-  margin: 20px 20px;
+  margin: 20px 25px;
   display: flex;
   flex-direction: row;
 }
 
 .imgWrapper{
   overflow: hidden;
-  border: 1px solid rgb(100, 100, 100, 0.5);
+  border: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 .imgWrapper img{
   width: 140px;
   margin: -20px 5px;
+}
+
+.productDescription{
+  margin: 15px 25px;
+}
+
+.productDescription *{
+  margin: 0;
+}
+
+.productName{
+  font: bold 22px Poppins, sans-serif;
+  margin-bottom: 5px;
+}
+
+.productPrice{
+  font: normal 16px Poppins, sans-serif;
+  color: rgba(100, 100, 100, 0.6);
+}
+
+.productSellingPrice{
+  font: bold 18px Poppins, sans-serif;
+  color: black;
 }
