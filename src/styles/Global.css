@@ -1,7 +1,10 @@
-body{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
   background-color: rgb(223, 235, 241);
 }
 
@@ -18,7 +21,7 @@ body{
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
 }
 
-.title{
+.mainText{
   margin: 20px auto 0px auto;
   font: bold 30px Poppins, sans-serif;
 }
@@ -66,4 +69,43 @@ hr{
 .productSellingPrice{
   font: bold 18px Poppins, sans-serif;
   color: black;
+}
+
+.result{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  font: bold 15px Poppins, sans-serif;
+}
+
+.freeShipping{
+  margin: 10px auto;
+  padding: 20px 20px;
+  border-radius: 40px;
+
+  background-color: rgb(171, 255, 171);
+  color: rgb(6, 126, 6, 0.8);
+  font: normal 18px Poppins, sans-serif;
+}
+
+.link{
+  margin: 30px auto;
+}
+
+.button{
+  width: 630px;
+  height: 80px;
+  border-radius: 10px;
+  
+  border: none;
+  background-color: rgb(61, 143, 251);
+  color: white;
+  font: bold 30px Poppins, sans-serif;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover{
+  background-color:rgb(53, 124, 218);
 }
